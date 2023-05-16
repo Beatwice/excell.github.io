@@ -4,7 +4,10 @@ import Header from '../components/header/Header';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Iskill from "../assets/img_carousel/Iskill.png";
-
+import Easybengkel from "../assets/img_carousel/easybengkel.png";
+import Vaksin from "../assets/img_carousel/vaksin.png";
+import Makro from "../assets/img_carousel/makro.png";
+import './Home.css';
 class Home extends Component 
 {
     render ()
@@ -41,32 +44,22 @@ class Home extends Component
                         </div>
                         <br />
                         <br />
-                        <Carousel>
+                        <div className='flex justify-center'>
+                        <Carousel autoPlay={true} infiniteLoop={true} className='carousel-container' showArrows={false}>
+                            <div>
+                                <img src={Makro} />
+                            </div>
+                            <div>
+                                <img src={Easybengkel} />
+                            </div>
                             <div>
                                 <img src={Iskill} />
-                                <p className="legend">Legend 1</p>
                             </div>
                             <div>
-                                <img src="assets/2.jpeg" />
-                                <p className="legend">Legend 2</p>
-                            </div>
-                            <div>
-                                <img src="assets/3.jpeg" />
-                                <p className="legend">Legend 3</p>
-                            </div>
-                            <div>
-                                <img src="assets/4.jpeg" />
-                                <p className="legend">Legend 4</p>
-                            </div>
-                            <div>
-                                <img src="assets/5.jpeg" />
-                                <p className="legend">Legend 5</p>
-                            </div>
-                            <div>
-                                <img src="assets/6.jpeg" />
-                                <p className="legend">Legend 6</p>
+                                <img src={Vaksin} />
                             </div>
                         </Carousel>
+                        </div>
                     </div>
                 </div>
             </div>
