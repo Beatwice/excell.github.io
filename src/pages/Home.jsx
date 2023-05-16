@@ -7,6 +7,7 @@ import Iskill from "../assets/img_carousel/Iskill.png";
 import Easybengkel from "../assets/img_carousel/easybengkel.png";
 import Vaksin from "../assets/img_carousel/vaksin.png";
 import Makro from "../assets/img_carousel/makro.png";
+import Footer from '../components/footer/footer';
 import './Home.css';
 class Home extends Component 
 {
@@ -15,7 +16,7 @@ class Home extends Component
         return (
             <>
             <Header/>
-            <div className='container mx-auto px-4'>
+            <div className='container mx-auto px-24'>
                 <div className='pt-80' style={{height:'90vh'}}>
                     <div className='text-center'>
                         {/* <div className='text-center'>
@@ -61,6 +62,10 @@ class Home extends Component
                         </Carousel>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <Footer/>
                 </div>
             </div>
             </>
