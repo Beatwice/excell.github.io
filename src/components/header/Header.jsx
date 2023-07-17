@@ -1,40 +1,36 @@
 import React, { Component} from 'react';
 import { Link } from "react-router-dom";
 import white_logo from "../../assets/logo/WhiteLogo.png";
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
-class Header extends Component 
-{
-    render ()
-    {
-        return (
-            <>
-            <nav className='bg-gray-800 text-white flex px-20 justify-between h-14 items-center	'>
+
+const Header = () => {
+    return(
+        <div>
+             <nav className='bg-gray-800 text-white flex px-20 justify-between h-14 items-center	'>
                 <div className='flex items-center'>
                     <div className='mr-16 items-center'>
+                    <Link to="/">
                         <img src={white_logo} alt="Logo" style={{width:'60px'}} />
+                    </Link>
                     </div>
-                    <ul className='flex'>
-                        <li className='mr-10 visited:bg-neutral'>
-                            <Link to="/">Home</Link>
+                    <ul className='flex gap-10'>
+                        <li>
+                            <Link to="/" className='hover:text-gray-300 duration-300' >Home</Link>
                         </li>
-                        <li className='mr-10'>
-                            <Link to="/experience">Experience</Link>
+                        <li>
+                            <Link  to="/experience" className='hover:text-gray-300 duration-300'>Experience</Link>
                         </li>
-                        <li className='mr-10'>
-                            <Link to="/project">Project</Link>
+                        <li>
+                            <Link to="/project/development" className='hover:text-gray-300 duration-300'>Project</Link>
                         </li>
-                        <li className='mr-10'>
-                            <Link to="/contact">Contact</Link>
+                        <li>
+                            <Link to="/contact" className='hover:text-gray-300 duration-300'>Contact</Link>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    "Dark Mode"
-                </div>
+                {/* {toggleTheme()} */}
             </nav>
-            </>
-        );
-    }
+        </div>
+    );
 }
 
 export default Header;

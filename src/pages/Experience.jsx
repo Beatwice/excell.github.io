@@ -4,46 +4,23 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import Footer from '../components/footer/footer';
 import './Experience.css'
-class Experience extends Component 
-{
-    render ()
-    {
-        return (
-            <>
+
+
+const Experience = () => {
+    return (
+        <div>
             <Header/>
             <br />
             <br />
+            <p className='text-center text-5xl font-bold' style={{color: '#393646', opacity: 0.9}} >My Experience</p>
+            <br />
             <VerticalTimeline lineColor={ "#EAEAEA" }>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
                     className="vertical-timeline-element--education"
-                    date="2023 - Now"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    date = "2023 - Now"
+                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
+                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#393646' }}
                     // icon={<SchoolIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">PT. Transforme Indonesia</h3>
@@ -53,6 +30,8 @@ class Experience extends Component
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="2022 - 2023"
+                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
                     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                     // icon={<SchoolIcon />}
                 >
@@ -63,19 +42,21 @@ class Experience extends Component
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="2022 - now"
+                    contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
                     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                     // icon={<SchoolIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">Freelance</h3>
-                    <h4 className="vertical-timeline-element-subtitle">(Laravel, React JS)</h4>
+                    <h4 className="vertical-timeline-element-subtitle">(Laravel)</h4>
                     <p> Fullstack Developer</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="October 2021"
-                    contentStyle={{ background: '#F1F6F9', border:'red'}}
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid #F1F6F9' }}
+                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     // icon={<SchoolIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">Mahir Membuat Website Dengan Laravel</h3>
@@ -93,11 +74,10 @@ class Experience extends Component
                     <p> Creative Direction, Visual Design</p>
                 </VerticalTimelineElement> */}
             </VerticalTimeline>
-            <br />
             <Footer/>
-            </>
-        );
-    }
+            <br />
+        </div>
+    );
 }
 
 export default Experience;

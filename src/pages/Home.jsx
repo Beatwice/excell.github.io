@@ -9,20 +9,15 @@ import Vaksin from "../assets/img_carousel/vaksin.png";
 import Makro from "../assets/img_carousel/makro.png";
 import Footer from '../components/footer/footer';
 import './Home.css';
-class Home extends Component 
-{
-    render ()
-    {
-        return (
-            <>
+
+
+const Home = () => {
+    return (
+        <div>
             <Header/>
             <div className='container mx-auto px-24'>
                 <div className='pt-80' style={{height:'90vh'}}>
                     <div className='text-center'>
-                        {/* <div className='text-center'>
-                            <img src={Icon} alt="icon" className='text-center' style={{width:'200px', display:'inline' }} />
-                        </div> */}
-                        <br />
                         <h1 className="text-5xl font-bold">
                             Hi, Im Excell
                         </h1>
@@ -37,7 +32,6 @@ class Home extends Component
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <div className='text-center'>
                         <div className='text-3xl font-semibold'>
@@ -68,9 +62,8 @@ class Home extends Component
                     <Footer/>
                 </div>
             </div>
-            </>
-        );
-    }
+        </div>
+    );
 }
 
 export default Home;
