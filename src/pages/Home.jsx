@@ -15,13 +15,13 @@ const Home = () => {
     return (
         <div>
             <Header/>
-            <div className='container mx-auto px-24'>
-                <div className='pt-80' style={{height:'90vh'}}>
+            <div className='container mx-auto px-24 max-sm:px-0 pt-16'>
+                <div className='body pt-72 max-sm:pt-80' style={{height:'90vh'}}>
                     <div className='text-center'>
-                        <h1 className="text-5xl font-bold">
+                        <h1 className="text-5xl max-sm:text-3xl font-bold">
                             Hi, Im Excell
                         </h1>
-                        <div className="text-2xl">
+                        <div className="text-2xl max-sm:text-1xl">
                             <Typewriter
                             options={{
                                 strings:"I'm Fullstack Developer and UI Designer",
@@ -32,7 +32,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <div className='text-center'>
                         <div className='text-3xl font-semibold'>
                             My Experience
@@ -56,8 +56,7 @@ const Home = () => {
                         </Carousel>
                         </div>
                     </div>
-                </div>
-
+                </div> */}
                 <div>
                     <Footer/>
                 </div>

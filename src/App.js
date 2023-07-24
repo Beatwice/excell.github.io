@@ -17,7 +17,6 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/project/ui_design' element={<Ui_Design/>}/>
         <Route path='/project/ui_design/vaccine' element={<Vaccine/>}/>
-
       </Routes>
     </Router>
   );

@@ -1,25 +1,35 @@
 import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/footer';
 import './Contact.css';
 
+
 const Contact = () => {
     const form = useRef();
 
-    const sendEmail = () => {
-
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_uy6k3zl', 'template_m69yl9h', form.current, 'eh0oxMO79ufi3d0U9')
+        .then((result) => {
+            alert('email was sent successfully');
+            // console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
     };
 
     return (
         <div>
             <Header/>
-            <div className='container mx-auto px-24'>
+            <div className='container mx-auto px-24 max-sm:px-0 pt-16 max-sm:pt-10'>
                 <br />
                 <br />
-                <p className='text-center text-5xl font-bold' style={{color: '#393646', opacity: 0.9}} >Contact</p>
+                <p className='text-center text-5xl font-bold max-sm:text-3xl' style={{color: '#393646', opacity: 0.9}} >Contact</p>
                 <br />
-                <br />
-                <div className="container px-5 mx-auto">
+                <div className="container px-5 max-sm:px-0 mx-auto max-sm:pt-[-16]">
                     <div className="lg:w-1/2 md:w-2/3 mx-auto">
                         <form ref={form} onSubmit={sendEmail} action="">
                             <div className="p-2 w-full">
@@ -98,6 +108,7 @@ const Contact = () => {
             </div>
             <br />
             <br />
+            <div className='max-sm:pb-20'></div>
             <div>
                 <Footer/>
             </div>
