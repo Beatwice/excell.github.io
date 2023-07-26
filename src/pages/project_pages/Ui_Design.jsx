@@ -9,7 +9,7 @@ const UiDesign = () => {
     return(
         <div>
             <Header/>
-            <div className='px-20 max-sm:px-0 max-sm:pt-2 max-sm:px-4 max-sm:px-0 pt-16 max-sm:pt-11'>
+            <div className='px-20 max-sm:px-0 max-sm:px-4 pt-16 max-sm:pt-10'>
                 <br />
                 <br />
                 <p className='text-center text-5xl font-bold max-sm:text-3xl' style={{color: '#393646', opacity: 0.9}} >Projects</p>
