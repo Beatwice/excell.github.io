@@ -8,7 +8,7 @@ import './Experience.css'
 
 const Experience = () => {
     return (
-        <>
+        <div style={{background:"white"}}>
             <Header/>
             <br />
             <br />
@@ -40,7 +40,7 @@ const Experience = () => {
                         <p> Application Developer </p>
                         <span className='max-sm:text-sm'>2022 - 2023</span>
                     </VerticalTimelineElement>
-                    <VerticalTimelineElement
+                    {/* <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         contentStyle={{ background: '#19376D', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid #19376D' }}
@@ -48,10 +48,10 @@ const Experience = () => {
                         // icon={<SchoolIcon />}
                         >
                         <h3 className="vertical-timeline-element-title">Freelance</h3>
-                        <h4 className="vertical-timeline-element-subtitle">(Laravel)</h4>
+                        <h4 className="vertical-timeline-element-subtitle"></h4>
                         <p> Fullstack Developer</p>
                         <span className='max-sm:text-sm'>2022 - Now</span>
-                    </VerticalTimelineElement>
+                    </VerticalTimelineElement> */}
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         contentStyle={{ background: '#84142D', color: '#fff' }}
@@ -77,7 +77,7 @@ const Experience = () => {
                 </VerticalTimeline>
             </div>
             <Footer/>
-        </>
+        </div>
     );
 }
 

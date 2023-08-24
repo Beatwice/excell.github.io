@@ -13,11 +13,11 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div>
+        <div style={{background:"white"}}>
             <Header/>
             <div className='container mx-auto px-24 max-sm:px-0 pt-16'>
                 <div className='body pt-72 max-sm:pt-80' style={{height:'90vh'}}>
-                    <div className='text-center'>
+                    <div className='text-center' style={{color:"#333333"}}>
                         <h1 className="text-5xl max-sm:text-3xl font-bold">
                             Hi, Im Excell
                         </h1>
@@ -32,31 +32,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div>
-                    <div className='text-center'>
-                        <div className='text-3xl font-semibold'>
-                            My Experience
-                        </div>
-                        <br />
-                        <br />
-                        <div className='flex justify-center'>
-                        <Carousel autoPlay={true} infiniteLoop={true} className='carousel-container' showArrows={false}>
-                            <div>
-                                <img src={Makro} />
-                            </div>
-                            <div>
-                                <img src={Easybengkel} />
-                            </div>
-                            <div>
-                                <img src={Iskill} />
-                            </div>
-                            <div>
-                                <img src={Vaksin} />
-                            </div>
-                        </Carousel>
-                        </div>
-                    </div>
-                </div> */}
                 <div>
                     <Footer/>
                 </div>

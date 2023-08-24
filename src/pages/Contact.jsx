@@ -22,7 +22,7 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div style={{background:"white"}}>
             <Header/>
             <div className='container mx-auto px-24 max-sm:px-0 pt-16 max-sm:pt-10'>
                 <br />

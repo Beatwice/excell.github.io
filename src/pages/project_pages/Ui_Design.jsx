@@ -7,7 +7,7 @@ import Footer from '../../components/footer/footer';
 
 const UiDesign = () => {
     return(
-        <div>
+        <div style={{background:"white"}}>
             <Header/>
             <div className='px-20 max-sm:px-0 max-sm:px-4 pt-16 max-sm:pt-10'>
                 <br />
