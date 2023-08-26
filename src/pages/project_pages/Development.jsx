@@ -23,7 +23,7 @@ const Development = () => {
                     <div class="rounded overflow-hidden shadow-lg">
                         <img className="w-full"src={vaksin} alt="vaksin"/>
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-1">Vaccine Application</div>
+                            <div class="font-bold text-xl mb-1" style={{color:"#333333"}}>Vaccine Application</div>
                             <p class="text-gray-700 text-base">
                                 Design Challenge by @plainthingstudio
                             </p>

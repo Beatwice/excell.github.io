@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Header from '../../components/header/Header';
 import './Development.css'
 import vaksin from "../../assets/img_carousel/vaksin.png";
+import vehicleManagement from "../../assets/img_carousel/vehicle_1.png"
 import { Link } from "react-router-dom";
 import Footer from '../../components/footer/footer';
 
@@ -23,7 +24,7 @@ const UiDesign = () => {
                     <div class="rounded overflow-hidden shadow-lg">
                         <img className="w-full"src={vaksin} alt="vaksin"/>
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-1">Vaccine Application</div>
+                            <div class="font-bold text-xl mb-1" style={{color:"#123123"}}>Vaccine Application</div>
                             <p class="text-gray-700 text-base">
                                 Design Challenge by @plainthingstudio
                             </p>
@@ -33,18 +34,18 @@ const UiDesign = () => {
                         </div>
                     </div>
                     
-                    {/* <div class="rounded overflow-hidden shadow-lg">
-                        <img className="w-full"src={vaksin} alt="vaksin"/>
+                    <div class="rounded overflow-hidden shadow-lg">
+                        <img className="w-full"src={vehicleManagement} alt="vaksin"/>
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-1">Vaccine Application</div>
+                            <div class="font-bold text-xl mb-1" style={{color:"#123123"}}>Vehicle Management</div>
                             <p class="text-gray-700 text-base">
-                                Design Challenge by @plainthingstudio
+                                Projects from the company - Pt. Transforme
                             </p>
                         </div>
                         <div className='flex justify-end px-6 pt-2 pb-4 relative right-0 bottom-0'>
-                            <Link to="/project/ui_design/vaccine" className='text-black duration-300 hover:text-blue-700 font-semibold'>See Details</Link>
+                            <Link to="/project/ui_design/vehicle_management" className='text-black duration-300 hover:text-blue-700 font-semibold'>See Details</Link>
                         </div>
-                    </div> */}
+                    </div>
 
                     {/* <div class="rounded overflow-hidden shadow-lg">
                         <img className="w-full"src={vaksin} alt="vaksin"/>

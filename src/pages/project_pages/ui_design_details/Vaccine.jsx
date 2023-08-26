@@ -1,6 +1,4 @@
-import React, { Component, Fragment } from 'react';
 import Header from '../../../components/header/Header';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Footer from '../../../components/footer/footer';
 import { Carousel } from 'react-responsive-carousel';
